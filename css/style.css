@@ -374,7 +374,7 @@ footer .visitas{
     }
     .boton_WhatsApp {
         position: fixed;
-        bottom: 0.5rem;
+        bottom: 5rem;
         right: 0.5rem;
         background-color: #25D366; 
         color: white;
