@@ -108,7 +108,9 @@ header {
 .boton:hover {
     background-color: gray;
 }
-
+.servicios .cabecera {
+    padding-top: 3rem;    
+}
 .cabecera {
     text-align: center;
     font-size: 1.5rem;
