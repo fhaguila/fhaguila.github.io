@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Contable</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="./index.html"><h1>Grupo Contable</h1></a>
+        <div class="bx bx-menu" id="icono-menu"></div>
+        <ul class="navbar">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>           
+        </ul>
+    </header>
+    <!--Portada Principal -->
+    <section class="inicio" id="inicio">
+        <div class="texto-inicio">
+            <h1>Asesoría Contable <br> Tributaria y Financiera</h1>
+            <p>
+                Mantén al día los compromisos contables y financieros de tu 
+                empresa, cumple con tus obligaciones tributarias y impulsa un crecimiento continuo
+                de tus inversiones. Confía en nuestro servicio y deja en nuestras manos expertas 
+                tus obligaciones contables.
+            </p>
+            <a href="#" class="boton">Ver Servicios...</a>
+        </div>
+    </section>
+    <!-- lista de servicios ofrecidos-->
+    <section class="servicios" id="servicios">
+        <div class="cabecera">
+            <h2>Servicios</h2>
+        </div>
+        <div class="contenedor_serv">
+            <div class="caja">
+                <img src="./img/contable.jpg" alt="Asesoría Contable">
+                <h3>Asesoría Contable</h3>
+                <h4>Personas Naturales y Jurídicas</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+            <div class="caja">
+                <img src="./img/tributos.jpg" alt="Asesoría Tributaria">
+                <h3>Asesoría Tributaria</h3>
+                <h4>Todos los Régimenes Tributarios</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+            <div class="caja">
+                <img src="./img/laboral.jpg" alt="Asesoría Laboral">
+                <h3>Asesoría Laboral</h3>
+                <h4>Empleado y Empleador</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+            <div class="caja">
+                <img src="./img/financiera.jpg" alt="Asesoría Financiera">
+                <h3>Asesoría Financiera</h3>
+                <h4>Banca Comercial y Otras Entidades</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+            <div class="caja">
+                <img src="./img/empresas.jpg" alt="Constitución de Empresas">
+                <h3>Constitución de Empresas</h3>
+                <h4>Creación y Reactivación</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+            <div class="caja">
+                <img src="./img/exterior.jpg" alt="Comercio Exterior">
+                <h3>Comercio Exterior</h3>
+                <h4>Importación de Bienes</h4>
+                <span><a href="#contacto">Más info...</a></span>
+            </div>
+        </div>
+    </section>
+    <!-- formulario de contacto-->
+    <section class="contacto" id="contacto">
+        <div class="cabecera">
+            <h2>Contacto</h2>
+        </div>
+        <div class="contenedor_contacto">
+            <h2>Escríbenos</h2>
+            <p>
+                Si tienes alguna duda, sugerencia o consulta sobre
+                nuestros servicios, por favor rellena los siguientes campos y en un plazo máximo de 24 horas nos comunicaremos
+                contigo.
+            </p>
+           
+            <form action="#" method="get" class="formulario">  
+                <div class="campo">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres">
+                </div>
+                <div class="campo">
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+                </div>
+                <div class="campo">
+                    <label for="celular"></label>
+                    <input type="text" id="celular" name="celular" placeholder="Celular">
+                </div>
+                <div class="campo">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+                <div class="campo">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio">                        
+                        <option value="asesoria_contable">Asesoría Contable</option>
+                        <option value="asesoria_tributaria">Asesoría Tributaria</option>
+                        <option value="asesoria_laboral">Asesoría Laboral</option>
+                        <option value="asesoria_financiera">Asesoría Financiera</option>
+                        <option value="comprobantes_pago">Emisión de comprobantes de pago electrónico</option>
+                        <option value="tramites_gestiones">Trámites y Gestiones Empresariales</option>
+                        <option value="licencias_funcionamiento">Licencias de Funcionamiento</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="localiza">Localización de su Empresa</label>
+                    <select id="localiza" name="localiza">                        
+                        <option value="huaraz">Huaraz</option>
+                        <option value="carhuaz">Carhuaz</option>
+                        <option value="yungay">Yungay</option>
+                        <option value="caraz">Caraz</option>                        
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="consulta">Consultas</label>
+                    <textarea id="consulta" name="consulta" placeholder="Escriba una consulta más detallada"></textarea>
+                </div>               
+                <button type="submit" class="btn-enviar">ENVIAR</button>                
+            </form>
+            
+            
+        </div>
+    </section>
+<!-- ventanas emergentes-->
+    <div id="VentanaEmergente" class="VentanaEmergente">
+        <div class="Contenedor_VentanaEmergente">
+            <span class="cerrar" onclick="CerrarVentanaEmergente()">&times;</span>
+            <h2>REGISTRO EXITOSO</h2>
+            <p>Hemos recibido tu consulta y nos pondremos en contacto contigo en un plazo máximo de 24 horas.</p>
+            <br>
+            <button class="botoncerrar" onclick="CerrarVentanaEmergente()">Cerrar</button>
+        </div>
+    </div>
+     <div id="VentanaEmergenteError" class="VentanaEmergente">
+        <div class="Contenedor_VentanaEmergente_Error">
+            <span class="cerrar" onclick="CerrarVentanaEmergenteError()">&times;</span>
+            <h2>ERROR</h2>
+            <p>Por favor, completa todos los campos del formulario.</p>
+            <br>
+            <button class="botoncerrar" onclick="CerrarVentanaEmergenteError()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Boton de Whatsapp-->
+    <a href="https://wa.me/943876543" class="boton_WhatsApp" target="_blank">
+        <i class='bx bxl-whatsapp'></i> 
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/boxicons@latest/js/boxicons.min.js"></script>
+
+    <footer>
+        <p> &copy;2024 ||Todos los derechos reservados || Diseñado por Fredy Haro Aguila ||  </p>
+        
+        <p class="visitas">  Visitas: <span id="contador-de-visitas"> 0</span></p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

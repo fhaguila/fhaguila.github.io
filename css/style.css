@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-texto: #1A92C9;
+    --font-base: 1rem; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.6875rem; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.25rem 3.125rem; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: var(--color-texto);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+#icono-menu{
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 0.625rem; 
+    color: var(--color-primario);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.inicio {
+    background-image: url('../img/fondo.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding-left: 3.125rem; 
+}
+
+.texto-inicio {
+    width: 45%;
+}
+
+.texto-inicio h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.texto-inicio p {
+    color: black;
+    font-size: 1.25rem; 
+    font-weight: 800;
+    margin: 0.5rem 0 1rem;
+    background-color: white;
+    border-radius: 0.15rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.texto-inicio span {
+    color: white;
+}
+
+.boton {
+    background-color: var(--color-texto);
+    color: white;
+    padding: 0.625rem 1.25rem; 
+    border-radius: 0.3rem;
+}
+
+.boton:hover {
+    background-color: gray;
+}
+
+.cabecera {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0; 
+    color: var(--color-texto);
+    font-weight: 900;
+}
+
+.contenedor_serv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); 
+    gap: 1rem;
+    padding: 0 1.25% 2.5%; 
+}
+
+.caja {
+    
+    border-radius: 0.125rem; 
+}
+
+.caja:hover{
+    border: 0.0625rem solid rgba(207, 207, 207, 0.849); 
+    border-radius: 0.6rem; 
+    background-color: #F1F5F8 ;
+}
+
+.caja img {
+    width: 100%;
+}
+
+.caja h4 {
+    margin: 0.3125rem 0; 
+    color: darkgrey;
+}
+
+.caja span a {
+    color: var(--color-texto);
+    font-weight: 800;
+}
+
+.contenedor_serv .caja {
+    text-align: center;
+}
+
+/* Contacto */
+#contacto {
+    padding: 3.125rem 1.25rem; 
+    background-color:   #F1F5F8;;
+}
+
+.cabecera h2 {
+    text-align: center;
+    color: var(--color-primario);
+    margin-bottom: 1.25rem; 
+}
+.contenedor_contacto {
+    max-width: 50rem; 
+    margin: 0 auto;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.625rem; 
+}
+
+.contenedor_contacto h2 {
+    color: var(--color-primario);
+    margin-bottom: 1.25rem; 
+    font-size: 1.8rem;
+}
+
+.contenedor_contacto p {
+    color: var(--color-texto);
+    line-height: 1.6;
+    margin-bottom: 1.25rem; 
+    font-size: 1.5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; 
+}
+
+.campo {
+    flex: 1;
+    min-width: calc(50% - 1.25rem); 
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.3125rem; 
+    color: var(--color-texto);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 0.9375rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem; 
+    background: #f9f9f9;
+    font-size: 1rem; 
+}
+
+.campo textarea {
+    resize: vertical;
+    height: 6.25rem; 
+}
+
+button.btn-enviar {
+    flex: 1 0 100%; 
+    background: var(--color-texto);
+    color: white;
+    padding: 0.625rem 1.25rem; 
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+    font-size: 1rem; 
+    margin-top: 1.25rem; 
+    width: auto;
+}
+
+/* Fin Contacto */
+
+/*Las ventanas Emergentes*/
+#VentanaEmergenteError {
+    display: none; /* Oculto inicialmente */
+    position: fixed; /* para fijar en la pantalla */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.VentanaEmergente {
+    display: none; /* Oculto inicialmente */
+    position: fixed; /* para fijar en la pantalla */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.Contenedor_VentanaEmergente {
+    background-color: rgba(70, 117, 170, 0.863); 
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 40%; 
+    text-align: center;
+}
+.Contenedor_VentanaEmergente_Error {
+    background-color: rgba(95, 37, 37, 0.87);
+    color: white; 
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 40%; 
+    text-align: center;
+}
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.botoncerrar{
+    background-color: var(--color-texto);
+    color: white;
+    width: 5rem;
+    height: 2rem;    
+}
+.botoncerrar:hover{    
+    cursor: pointer; 
+}
+/*fin de las Ventanas Emergentes*/
+
+/*  botón de WhatsApp */
+.boton_WhatsApp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366; 
+    color: white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-size: 3.5rem;
+    text-decoration: none;
+}
+
+.boton_WhatsApp:hover {
+    background-color: #128C7E; 
+}
+/*fin estilo boton de whatsapp*/
+
+footer {
+    
+    background-color: var(--color-texto);
+    color: white;
+    height: 5rem; /* 80px en rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    padding: 0.2rem;
+}
+footer .visitas{
+   background-color: rgba(245, 239, 239, 0.685);
+   border-radius: 0.3rem;
+   color: black;    
+ }
+
+@media (max-width: 43.75rem) { /* 700px en rem */
+    .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color:#F7F7F7;
+        text-align: center;
+    }
+
+    #icono-menu{
+        display: initial;
+        font-size: 2.5rem;
+    }
+
+    .navbar a {
+        display: block;
+    }
+
+    .navbar.activo { /*.activo debe estar junto a la otra clase eso quiere decir que la clase estará a su lado y no es su hijo*/
+        top: 100%;
+    }
+    .inicio {
+        background-image: url('../img/fondoresponsive.jpg');
+       
+    }
+    .texto-inicio {
+        width: 60%;
+    }
+
+    .texto-inicio h1 {
+        font-size: 2rem;      
+    }
+    .texto-inicio p {
+        
+        font-size: 1rem; /* 20px en rem */        
+    }
+    .boton_WhatsApp {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        background-color: #25D366; 
+        color: white;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: var(--color-texto);
+        color: white;
+        height: 5rem; /* 80px en rem */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
